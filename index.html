@@ -3,12 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131-BYU-IDAHO</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Relga-Zidrey Nkounkou</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. My landing page of wdd131 course. BY Relga-Zidrey Nkounkou">
+    <meta name="author" content="Relga-Zidrey Nkounkou">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
-        <nav><a href="week01/basic-layout.html">Week 01</a></nav>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/relga-zidrey-nkounkou-018012249">LinkedIn</a>
+            <a href=" https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
+            <a href="#">Final Project </a>
+        </nav>
     </header>
-    
+
+
+
+    <main>
+
+        <h1>Relga-Zidrey Nkounkou</h1>
+
+        <section class="card">
+            <h2 class="about-me">About Me</h2>
+            <div class="img-page">
+               
+                <span>My name is Zidrey, from Brazzaville, Republic of Congo. I am majoring in Software Development, at BYU-Idaho. In my free time, I like playing the piano, studying English and Reading Holy Scriptures.</span>
+                <img src="images/zidrey.jpg" alt="Zidrey's image">
+            </div>
+            
+            <div class="congo-container">
+                <h3>Republic of Congo</h3>
+                <div class="congo-flag">
+                    <img src="images/logo.png" alt="Flag of Congo">
+
+                    <p>Located in Central Africa, the history of the Republic of the Congo has been marked by diverse civilisations: Indigenous, French and post-independence.</p>
+
+                </div>
+
+                <div class="about-congo">
+
+                    <p><strong>Official: </strong> Republic of the Congo</p>
+                    <p><strong>Capital: </strong> Brazzaville</p>
+                    <p><strong>Population: </strong> 5,970,424</p>
+                    <p><strong>Languages: </strong> French, Kikongo, Lingala</p>
+                    <p><strong>Area: </strong>342,000 sq. km</p>
+                    <p><strong>Currency: </strong>XAF</p>
+            </div>
+        </div>
+    </section>
+
+
+
+         <section class="card">
+            <h2 class="ressources-title">Web Dev Ressources</h2>
+        <ul class="ressources">
+            <li><a href="https://developer.mozilla.org/fr/docs/Web">M mdn</a></li>
+           <li><a href="https://www.w3schools.com/">W3schools</a></li>
+           <li><a href="https://portal.byupathway.edu/cmcportal/">Student Portal</a></li>
+           <li><a href="https://catalog.byupathway.edu/academicpolicies/studentlife/copyright-infringement">Copyright</a></li>
+        </ul>
+         </section>
+    </main>
+
+
+    <footer>
+    <p>&copy; <span id="currentyear"></span> Relga-Zidrey Nkounkou, Brazzaville</p>
+    <p id="lastmodified"> </p>
+    </footer>
 </body>
 </html>
