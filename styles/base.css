@@ -58,9 +58,10 @@ nav a:hover {
 
 main {
     display: grid;
-    grid-template: 1fr;
+    grid-template-columns: 1fr;
     gap: 15px;
     margin: 10px;
+
 }
 
 
@@ -75,7 +76,7 @@ h1 {
 
 main section:nth-child(2) {
     grid-row: 2 / 4;
-    grid-column: 1 / 2;
+    grid-column: 1;
     background-color: #ffff;
     border-radius: 5px;
     border: 2px solid green;
@@ -85,7 +86,7 @@ main section:nth-child(2) {
 }
 main section:nth-child(3) {
     grid-row: 2 / 4;
-    grid-column: 2 / 3;
+    grid-column: 2;
     width: 400px;
     background-color: #ffff;
     border-radius: 5px;
