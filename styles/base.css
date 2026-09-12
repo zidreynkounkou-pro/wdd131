@@ -103,6 +103,7 @@ ul li {
     min-height: 30px;
     min-width: 30px;
     margin: 3px;
+    line-height: 1.5;
 }
 
 ul li a  {
@@ -183,4 +184,5 @@ footer {
 footer p {
     margin: 8px;
     min-height: 30px;
+    line-height: 1.5;
 }
