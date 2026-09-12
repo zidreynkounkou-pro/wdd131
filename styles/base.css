@@ -132,7 +132,8 @@ ul li a:hover {
 }
 
 .img-page img {
-    width: 150px;
+    width: 225px;
+    height: 257px;
     align-self: center;
 }
 
@@ -150,8 +151,8 @@ h2 {
 }
 
 .congo-flag img {
-    width: 150px;
-    height: 100px;
+    width: 223px;
+    height: 150px;
     margin-left: 15px;
     
 }
