@@ -10,7 +10,7 @@ body {
 header {
     display: block;
     text-align: center;
-    background-color: yellow;
+    background-color: #000;
     padding-top: 15px;
     position: fixed;
     top: 0;
@@ -23,7 +23,7 @@ header {
 
 #course-title {
     
-  color: green;
+  color: #fff;
   font-size: xx-large;
 }
 
@@ -34,7 +34,7 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     margin-top: 15px;
-    background-color: green;
+    background-color: rgb(2, 2, 35);
     padding-bottom: 10px;
     padding-top: 5px;
     
@@ -77,10 +77,10 @@ h1 {
 main section:nth-child(2) {
     grid-row: 2 / 4;
     grid-column: 1;
-    background-color: #ffff;
+    background-color: #334550cd;
     border-radius: 5px;
-    border: 2px solid green;
-    color: green;
+    border: 2px solid rgb(2, 2, 35) ;
+    color: #fff;
     
 
 }
@@ -88,9 +88,9 @@ main section:nth-child(3) {
     grid-row: 2 / 4;
     grid-column: 2;
     width: 400px;
-    background-color: #ffff;
+    background-color: #334550cd;
     border-radius: 5px;
-    border: 2px solid green;
+    border: 2px solid rgb(2, 2, 35);
 
 }
 
@@ -98,7 +98,7 @@ ul {
     margin-top: 15px;
 }
 ul li, ul li a  {
-     color: green;
+     color: #fff;
      text-decoration: none;
 
      transition: .5s ease-in-out;
@@ -129,11 +129,11 @@ ul li a:hover {
 
 
 .congo-container {
-    color: green;
+    color: #fff;
 }
 
 h2 {
-    background-color: green;
+    background-color: rgb(2, 2, 35);
     color: white;
     padding: 10px;
     /*border-radius: 5px 5px 0 0;*/
@@ -165,7 +165,7 @@ h2 {
 }
 
 footer {
-    background-color: green;
+    background-color: rgb(2, 2, 35);
     padding: 30px;
     color: white;
     text-align: center;
