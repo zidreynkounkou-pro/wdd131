@@ -97,12 +97,20 @@ main section:nth-child(3) {
 ul {
     margin-top: 15px;
 }
-ul li, ul li a  {
-     color: #fff;
-     text-decoration: none;
 
-     transition: .5s ease-in-out;
+ul li {
+    color: #fff;
+    min-height: 30px;
+    min-width: 30px;
+    margin: 3px;
 }
+
+ul li a  {
+    color: #fff;
+    text-decoration: none;
+    transition: .5s ease-in-out;
+}
+
 
 ul li a:hover {
     color: red;
@@ -173,5 +181,6 @@ footer {
 
 
 footer p {
-    margin: 6px;
+    margin: 8px;
+    min-height: 30px;
 }
