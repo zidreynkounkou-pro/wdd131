@@ -1,0 +1,35 @@
+@media screen and (min-width: 740px){
+    
+    /* Hamburger */
+
+    
+    header {
+        display: flex;
+        justify-content: space-between ;
+        align-items: center;
+        background-color: rgb(0, 1, 23);
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #navigation {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: space-between;
+       
+    }
+
+    .menu-container {
+        padding: 0;
+    }
+
+    #navigation, .menu-container {
+        background-color: transparent;
+    }
+
+    #temple-text {
+        
+    }
+}
