@@ -14,13 +14,13 @@
         display: none;
     }
 
-    #navigation {
+    nav {
         display: flex !important;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    #navigation a {
+    nav a {
         padding: 20px;
     }
 
@@ -29,7 +29,7 @@
         padding: 0;
     }
 
-    #navigation, .menu-container {
+    nav, .menu-container {
         background-color: transparent;
     }
 
