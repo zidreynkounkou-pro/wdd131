@@ -18,8 +18,12 @@
         display: flex !important;
         flex-direction: row;
         justify-content: space-between;
-       
     }
+
+    #navigation a {
+        padding: 20px;
+    }
+
 
     .menu-container {
         padding: 0;
@@ -30,6 +34,27 @@
     }
 
     #temple-text {
-        
+        margin-left: 10px;
+    }
+
+    main {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 10px;
+    }
+
+    h1 {
+        grid-row: 1;
+        grid-column: 1 / 4;
+    } 
+
+    figure {
+        overflow: hidden;
+    }
+
+    img {
+        transition: 0.5s ease-in-out;
+    }
+    figure:hover img {
+        transform: scale(1.1, 0.8);
     }
 }
