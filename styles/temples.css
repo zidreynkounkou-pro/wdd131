@@ -69,7 +69,8 @@ header {
 }
 
 #menu.open::before {
-    content: '❌';
+    content: '✖';
+    color: rgb(255, 4, 4);
 }
 
 
