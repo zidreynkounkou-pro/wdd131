@@ -21,22 +21,6 @@ conditions.textContent = 'Broken clouds';
 const largeScreen = window.matchMedia('(min-width: 748px)');
 
 
-// Icons
-largeScreen.addEventListener('change', () => {
-
-    if (largeScreen.matches) {
-        weatherIcon.textContent = 'Weather 🌥️';
-    }
-    else {
-        weatherIcon.textContent = '';
-        weatherIcon.textContent = 'Weather';
-        weatherIconImg.src = 'images/partly_cloudy.svg';
-        weatherIconImg.alt = 'weather conditions icon';
-    }
-});
-
-
-
 function calculateWindChill(temp, windSpeed) {
     if (temp <= 50 && windSpeed > 3) {
         const windChill = 35.74 + 0.6215 * temp - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temp * Math.pow(windSpeed, 0.16);
