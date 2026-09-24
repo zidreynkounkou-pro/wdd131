@@ -11,7 +11,6 @@ const conditions = document.querySelector('#conditions');
 const wind = document.querySelector('#wind');
 const windChill = document.querySelector('#windchill');
 const weatherIcon = document.querySelector('#weather');
-const weatherIconImg = document.querySelector('.weather-icon');
 
 const fixtTemperature = 30;
 const fixedWind = 10;
