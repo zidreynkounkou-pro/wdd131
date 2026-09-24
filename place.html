@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="wdd131 - Brazzaville home page. A short description about Brazzaville, Republic of Congo.">
+    <meta name="author" content="Relga-Zidrey Nkounkuo">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <title>Brazzaville</title>
+</head>
+<body>
+
+    <header>
+        <h1>Brazzaville</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/brazzaville-1000-563.webp">
+                <source media="(min-width: 750px)" srcset="images/brazzaville-750-367.webp">
+                <source media="(min-width: 500px)" srcset="images/brazzaville-500-325.webp">
+                <img src="images/brazzaville-1500-844.webp" alt="Image of Brazzaville" width="1500" height="844">
+            </picture>
+        </div>
+
+
+        <section class="data">
+            <h2>Data</h2>
+            <p><strong>Official: </strong>Republic of the Congo</p>
+            <p><strong>Capital: </strong>Brazzaville</p>
+            <p><strong>Area: </strong>342,000 sq km</p>
+            <p><strong>Population: </strong>5,970,424</p>
+            <p><strong>Currency: </strong>XAF</p>
+            <p><strong>Time Zone: </strong>UTC+1</p>
+            <p><strong>Calling Code: </strong>+242</p>
+            <p><strong>Internet TLD: </strong>.cg</p>
+            <p><strong>Languages: </strong>Lingala, Kikongo, French</p>
+        </section>
+
+        <section class="weather">
+            <h2 id="weather">Weather 🌥️</h2>
+            <img class="weather-icon">
+            <p><strong>Temperature: </strong><span id="temperature"></span></p>
+            <p><strong>Conditions: </strong><span id="conditions"></span></p>
+            <p><strong>Wind: </strong><span id="wind"></span></p>
+            <p><strong>Wind Chill: </strong><span id="windchill"></span></p>
+        </section>
+    </main>
+
+
+    <footer>
+    <p>&copy; <span id="currentyear"></span> Relga-Zidrey Nkounkou, Brazzaville</p>
+    <p id="lastmodified"> </p>
+    </footer>
+</body>
+</html>
