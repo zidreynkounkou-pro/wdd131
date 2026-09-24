@@ -18,7 +18,6 @@ const fixedWind = 10;
 temperature.textContent = fixtTemperature + '°F';
 wind.textContent = fixedWind + 'mph';
 conditions.textContent = 'Broken clouds';
-const largeScreen = window.matchMedia('(min-width: 748px)');
 
 
 function calculateWindChill(temp, windSpeed) {
