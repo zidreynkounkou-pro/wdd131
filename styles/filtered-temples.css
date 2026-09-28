@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 5px;
+    min-width: 150px;
+    font-family:  "Roboto Serif", serif;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: x-large;
+    color: #fff;
+}
+
+#temple-text {
+    padding: 0.5rem;
+
+}
+
+
+.menu-container {
+    background-color: rgb(0, 1, 23);
+    grid-row: 1;
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(5, 73, 73);
+    grid-row: 2;
+    display: none;
+    flex-direction: column;
+}
+
+nav a {
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    padding: 0.5rem;
+    transition: 0.5s ease;
+}
+
+nav a:hover {
+    background-color: rgba(203, 207, 207, 0.392);
+    color: rgb(255, 4, 4);
+}
+
+/* Hamburger button */
+
+#menu {
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+#menu::before {
+    content: '☰';
+    color: #fff;
+}
+
+#menu.open::before {
+    content: '✖';
+    color: rgb(255, 4, 4);
+}
+
+
+h1 {
+
+    text-align: center;
+    padding: 10px;
+    color: rgb(0, 1, 23);
+}
+
+/* Photos */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+figure {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+
+figcaption {
+
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 15px;
+    color: rgb(0, 1, 23);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+
+
+footer {
+
+    padding: 2rem;
+    background-color: rgb(0, 1, 23);
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    margin: 8px;
+}

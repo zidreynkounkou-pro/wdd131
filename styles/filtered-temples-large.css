@@ -1,0 +1,93 @@
+@media screen and (min-width: 740px){
+    
+    /* Hamburger */
+
+    
+    header {
+        display: flex;
+        justify-content: space-between ;
+        align-items: center;
+        background-color: rgb(0, 1, 23);
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav a {
+        padding: 20px;
+    }
+
+
+    .menu-container {
+        padding: 0;
+    }
+
+    nav, .menu-container {
+        background-color: transparent;
+    }
+
+    #temple-text {
+        margin-left: 10px;
+    }
+
+    main {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 10px;
+        padding: 20px;
+    }
+
+    h2 {
+
+        padding: 10px;
+        /*
+        grid-row: 1;
+        grid-column: 1 / 4; */
+    } 
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        text-align: center;
+        background-color: rgb(158, 158, 158);
+        margin: 5px 0;
+        width: 100%;
+        gap: 10px;
+    }
+
+
+    .card-content {
+
+        padding: 15px;
+        text-align: center;
+        flex-grow: 1; /* this makes all text boxes same height */
+        padding: 15px;
+        
+    }
+
+
+    img {
+        width: 100%;
+        height: 250px;
+        transition: 0.5s ease-in-out;
+        object-fit: cover;
+        padding: 10px;
+    }
+
+
+    picture p {
+        margin: 4px;
+    }
+    figure:hover img {
+        transform: scale(1.1, 0.8);
+    }
+}
