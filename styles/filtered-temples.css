@@ -84,9 +84,8 @@ nav a.active:hover {
 
 h1 {
 
-    text-align: center;
     padding: 10px;
-    color: rgb(0, 1, 23);
+    font-size: larger;
 }
 
 /* Photos */

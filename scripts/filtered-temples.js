@@ -127,7 +127,7 @@ function showTemples(listTemples) {
         `
     <div class="card">
         <div class="card-content">
-        <h2>${data.templeName}</h2>
+        <h1>${data.templeName}</h1>
         <p><span>Location:</span> ${data.location}</p>
         <p><span>Dedicated:</span> ${data.dedicated}</p>
         <p><span>Size:</span> ${data.area}</p>
