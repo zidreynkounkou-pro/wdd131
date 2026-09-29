@@ -84,8 +84,8 @@ nav a.active:hover {
 h1 {
      color: rgb(5, 73, 73);
      text-align: center;
-     padding-bottom: 10px;
-     padding-top: 10px;
+     padding-bottom: 5px;
+     margin: 15px 0;
 }
 
 h2 {
@@ -96,10 +96,10 @@ h2 {
 
 /* Photos */
 
-main {
+#card-picture {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 5px auto;
+    margin: 0 auto;
     max-width: 800px;
     gap: 10px;
 
@@ -111,7 +111,6 @@ main {
     overflow: hidden;
     text-align: center;
     background-color: rgb(33, 44, 47);
-    margin: 5px 0;
     width: 100%;
     max-width: 450px;
     gap: 10px;

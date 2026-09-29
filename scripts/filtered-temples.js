@@ -117,13 +117,13 @@ document.querySelector('#lastmodified').textContent = `Last modified: ${document
 
 
 
-const main = document.querySelector('main');
+const card = document.querySelector('#card-picture');
 
 
 
 function showTemples(listTemples) {
 
-  main.innerHTML = `<h1>Filtered Temples</h1>` + listTemples.map(data =>
+  card.innerHTML =  listTemples.map(data =>
         `
     <div class="card">
         <div class="card-content">
