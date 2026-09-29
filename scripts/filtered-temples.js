@@ -119,19 +119,63 @@ document.querySelector('#lastmodified').textContent = `Last modified: ${document
 
 const main = document.querySelector('main');
 
-main.innerHTML = temples.map(data =>
+
+
+function showTemples(listTemples) {
+
+  main.innerHTML = listTemples.map(data =>
         `
     <div class="card">
         <div class="card-content">
         <h2>${data.templeName}</h2>
-        <p><span>Location</span>: ${data.location}</p>
-        <p><span>Dedicated</span>: ${data.dedicated}</p>
-        <p><span>Size</span>: ${data.area}</p>
+        <p><span>Location:</span> ${data.location}</p>
+        <p><span>Dedicated:</span> ${data.dedicated}</p>
+        <p><span>Size:</span> ${data.area}</p>
         </div>
         <img src="${data.imageUrl}" loading="lazy" alt="${data.templeName}">
     </div>
     `
-).join('');
+  ).join('');
+
+}
+
+showTemples(temples);
+
+
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', (e) => {
+
+    e.preventDefault();
+
+    const currentLink = e.currentTarget;
+
+    document.querySelectorAll('nav a').forEach(a => {
+      a.classList.remove('active');
+      a.style.backgroundColor = '';
+    });
+    currentLink.classList.add('active');
+    currentLink.style.backgroundColor = 'red';
 
 
 
+
+    if (e.target.id === "old") {
+      showTemples(temples.filter(t => parseInt(t.dedicated.split(',')[0]) < 1900));
+      
+     
+    }
+    else if (e.target.id === "new") {
+      showTemples(temples.filter(t => parseInt(t.dedicated.split(',')[0]) > 2000));
+    }
+    else if (e.target.id === "large") {
+      showTemples(temples.filter( t => t.area > 90000 ));
+    }
+    else if (e.target.id === "small") {
+      showTemples(temples.filter( t => t.area < 10000 ));
+    }
+    else {
+      showTemples(temples);
+        
+    }
+  })
+});
