@@ -123,11 +123,11 @@ const main = document.querySelector('main');
 
 function showTemples(listTemples) {
 
-  main.innerHTML = listTemples.map(data =>
+  main.innerHTML = `<h1>Filtered Temples</h1>` + listTemples.map(data =>
         `
     <div class="card">
         <div class="card-content">
-        <h1>${data.templeName}</h1>
+        <h2>${data.templeName}</h2>
         <p><span>Location:</span> ${data.location}</p>
         <p><span>Dedicated:</span> ${data.dedicated}</p>
         <p><span>Size:</span> ${data.area}</p>

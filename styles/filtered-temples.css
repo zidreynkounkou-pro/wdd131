@@ -81,8 +81,14 @@ nav a.active:hover {
     color: rgb(255, 4, 4);
 }
 
-
 h1 {
+     color: rgb(5, 73, 73);
+     text-align: center;
+     padding-bottom: 10px;
+     padding-top: 10px;
+}
+
+h2 {
 
     padding: 10px;
     font-size: larger;
@@ -93,7 +99,7 @@ h1 {
 main {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 10px auto;
+    margin: 5px auto;
     max-width: 800px;
     gap: 10px;
 

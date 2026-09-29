@@ -42,5 +42,10 @@
         padding: 20px;
     }
 
+    h1 {
+        grid-row: 1;
+        grid-column: 1 / 3;
+    }
+
     
 }
