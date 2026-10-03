@@ -65,12 +65,17 @@ table {
     color: #ffffff;
     font-size: large;
     width: 80%;
+    text-align: center;
     
 }
 
 th {
     background-color: #FCA311;
     color: #000000;
+}
+
+td {
+    text-align: center;
 }
 
 .primary {
@@ -141,6 +146,8 @@ ul {
     width: 80%;
     margin: 0 auto;
 }
+
+
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
