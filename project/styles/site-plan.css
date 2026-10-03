@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+header {
+    padding: 20px;
+    background-color: #14213D;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 25px;
+    width: 80%;
+    margin: 30px auto;
+}
+
+h2 {
+    margin: 5px;
+}
+
+main h1, main h2, h3 {
+    margin: 10px 0;
+}
+.overview {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.branding {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.break {
+    margin: 2px auto;
+    background-color: #FCA311;
+    width: 80%;
+    height: 4px;
+}
+
+.style-guide {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+.logo img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+table {
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: large;
+    width: 80%;
+    
+}
+
+th {
+    background-color: #FCA311;
+    color: #000000;
+}
+
+.primary {
+    background-color: #14213D;
+    padding: 15px;
+}
+
+.secondary {
+    background-color: #FCA311;
+    padding: 15px;
+}
+
+.accent1 {
+    background-color: #E5E5E5;
+    padding: 15px;
+}
+
+.accent2 {
+    background-color: #000000;
+    padding: 15px;
+}
+
+p {
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.typography {
+    text-align: center;
+    margin: 10px;
+}
+
+.normal-paragraph {
+    text-align: center;
+}
+
+.colored-paragraph {
+    text-align: center;
+}
+
+.colored-paragraph p {
+    background-color: #FCA311;
+    color: #ffffff;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav {
+    width: 100%;
+    margin: 20px auto;
+}
+
+nav h2 {
+    text-align: center;
+}
+
+
+ul {
+    background-color: #14213D;
+    list-style: none;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #FCA311;
+}
