@@ -157,3 +157,25 @@ nav ul li a {
 nav ul li a:hover {
     color: #FCA311;
 }
+
+.desktop-wireframe {
+    text-align: center;
+    margin: 20px auto;
+    border: 2px solid grey;
+    justify-self: center;
+}
+
+
+desktop-wireframe img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.mobile-wireframe {
+    text-align: center;
+    margin: 20px auto;
+    border: 2px solid grey;
+    justify-self: center;
+}
