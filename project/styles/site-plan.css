@@ -19,6 +19,12 @@ header {
     margin: 30px auto;
 }
 
+header, h1, h2, h3 {
+    font-family: "Sora", Sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 h2 {
     margin: 5px;
 }
@@ -115,12 +121,16 @@ p {
 
 .normal-paragraph {
     text-align: center;
-    font-family: Inter, Sans-serif;
+    font-family: "Inter", Sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .colored-paragraph {
     text-align: center;
-    font-family: Inter, Sans-serif;
+    font-family: "Inter", Sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .colored-paragraph p {
