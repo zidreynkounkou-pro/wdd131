@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product Review Form. This form allows users to submit their reviews for products they have purchased.">
+    <meta name="author" content="Relga-Zidrey Nkounkou">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <title>Product Review</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="lazyload.html">Product review</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="review.html" method="get">
+
+            <fieldset>
+                <legend>Prduct Name</legend>
+                <select id="name" name="products" required >
+                <option value="" disabled selected>Select a Product...</option>
+                </select><label for="name">e</label>
+            </fieldset>
+            
+
+            <fieldset>
+                <lengend>Overall Rating</legend>
+                <div class="stars">
+            	    <input type="radio" id="5-star" name="stars" value="5" required><label for="5-star"></label>
+	                <input type="radio" id="4-star" name="stars" value="4" required><label for="4-star"></label>
+	                <input type="radio" id="3-star" name="stars" value="3" required><label for="3-star"></label>
+	                <input type="radio" id="2-star" name="stars" value="2" required><label for="2-star"></label>
+	                <input type="radio" id="1-star" name="stars" value="1" required><label for="1-star"></label>
+                </div>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Date information</legend>
+                <label for="installation-date">Date of Installation</label>
+                <input type="date" id="installation-date" name="installation-date" required>
+            </fieldset>
+
+            <fieldset>
+               <legend>Useful Features (Check all that apply)</legend>
+               <label for="durability">Durability</label>
+                <input type="checkbox" id="durability" name="features" value="feature1">
+                <label for="ease-of-use">Ease of use</label>
+                <input type="checkbox" id="ease-of-use" name="features" value="feature2">
+                <label for="performance">Performance</label>
+                <input type="checkbox" id="performance" name="features" value="feature3">
+                <label for="design">Design</label>
+                <input type="checkbox" id="design" name="features" value="feature4">
+            </fieldset>
+
+            <fieldset>
+                <legend>User insights</legend>
+                <label for="review">Written Review</label>
+                <textarea id="review" name="review"></textarea>
+
+                <label for="username">Your Name</label>
+                <input type="text" id="username" name="username" required>
+            </fieldset>
+            
+
+            <input type="submit" value="Submit Product Review">
+        </form>
+    </main>
+
+    <footer>
+    <p>&copy; <span id="currentyear"></span> Relga-Zidrey Nkounkou, Brazzaville</p>
+    <p id="lastmodified"> </p>
+    </footer>
+</body>
+</html>

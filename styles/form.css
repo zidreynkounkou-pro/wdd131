@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-width: 402px;
+}
+nav {
+    padding: 15px;
+    background-color: #051730;
+    text-align: center;
+}
+
+a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+}
+
+a:hover {
+    color: yellowgreen;
+}
+
+
+
+/* Stars */
+
+input[type="radio"] {
+	display: none;
+	position: relative;
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+
+.stars > label {
+	color: goldenrod;
+	width: 35px;
+	height: 35px;
+	font-size: 2.5rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars > label:hover {
+    transform: scale(1.2);
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+
+
+footer {
+    padding: 15px;
+    background-color: #051730;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    margin: 5px;
+    padding: 5px;
+}
