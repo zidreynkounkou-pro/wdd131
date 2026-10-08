@@ -141,6 +141,14 @@ input[type="radio"] {
 }
 
 
+.review-paragraph {
+    padding: 10px;
+    margin: 10px;
+    background-color: #f2f2f2;
+    color: navy;
+}
+
+
 
 footer {
     padding: 15px;
