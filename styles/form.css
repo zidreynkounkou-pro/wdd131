@@ -69,6 +69,12 @@ form input[type="text"], form input[type="date"], form select {
     padding: 10px;
 }
 
+form input[type="text"] {
+    color: navy;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+
 form input[type="date"] {
     font-size: 1rem;
     color: navy;
@@ -112,15 +118,20 @@ label {
 /* Stars */
 
 input[type="radio"] {
-    width: 0;
-    height: 0;
+   
 	position: absolute;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    z-index: 0;
+   
 }
 
 .stars {
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: left;
+    margin-left: -10px;
 }
 
 
