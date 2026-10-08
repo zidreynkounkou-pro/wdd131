@@ -119,11 +119,8 @@ label {
 
 input[type="radio"] {
    
-	position: absolute;
-    width: 30px;
-    height: 30px;
-    opacity: 0;
-    z-index: 0;
+    display: none;
+	position: relative;
    
 }
 
