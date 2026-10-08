@@ -6,7 +6,7 @@
 
 
 body {
-    min-width: 402px;
+    min-width: 453px;
 }
 nav {
     padding: 15px;
@@ -99,6 +99,10 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
     color: navy;
+    cursor: pointer;
+}
+
+form input[type="checkbox"]:hover {
     cursor: pointer;
 }
 
