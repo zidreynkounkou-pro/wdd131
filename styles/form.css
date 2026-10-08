@@ -112,8 +112,9 @@ label {
 /* Stars */
 
 input[type="radio"] {
-	display: none;
-	position: relative;
+    width: 0;
+    height: 0;
+	position: absolute;
 }
 
 .stars {
