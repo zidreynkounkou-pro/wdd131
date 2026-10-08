@@ -37,6 +37,7 @@ form {
     margin: 15px auto;
     border-radius: 10px;
     border: 1px solid #933333;
+    min-width: 440px;
 }
 
 fieldset {
