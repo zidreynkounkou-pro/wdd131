@@ -37,7 +37,7 @@ const products = [
   }
 ];
 
-
+// Populate options dynamically 
 const selectElement = document.querySelector('select');
 
 products.forEach(product => {
@@ -46,3 +46,22 @@ products.forEach(product => {
   option.textContent = product.name;
   selectElement.appendChild(option);
 });
+
+// Store reviews on local Storage
+
+const countReviews = document.querySelector('#reviews');
+
+let count = Number (localStorage.getItem('countReviews')) || 0;
+
+// Increment count by 1
+
+count++
+
+// Save reviews
+
+localStorage.setItem('countReviews', count);
+
+// Display reviews
+
+countReviews.textContent = count;
+
