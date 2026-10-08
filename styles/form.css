@@ -17,11 +17,88 @@ nav {
 a {
       color: #fff;
       text-decoration: none;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
 }
 
 a:hover {
     color: yellowgreen;
+}
+
+/* Form Styles */
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    background-color: #f2f2f2;
+    width: 80%;
+    margin: 15px auto;
+    border-radius: 10px;
+    border: 1px solid #933333;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid navy;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+form select, form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: navy;
+}
+
+form textarea {
+    height: 150px;
+    resize: none;
+    border: 1px solid navy;
+}
+
+form input[type="text"], form input[type="date"], form select {
+    height: 48px;
+    border-radius: 6px;
+    border: 1px solid navy;
+    padding: 10px;
+}
+
+form input[type="date"] {
+    font-size: 1rem;
+    color: navy;
+}
+
+form input[type="submit"] {
+    background-color: #933333;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    width: 98%;
+    margin: 2px 1%;
+    font-size: 1.2rem;
+    transition: 0.8s ease;
+}
+
+
+form input[type="submit"]:hover {
+    color: navy;
+    cursor: pointer;
+}
+
+legend {
+    color: navy;
+    font-size: 1.2rem;
+}
+
+label {
+    color: #933333;
+    font-size: 1.1rem;
 }
 
 
@@ -48,6 +125,7 @@ input[type="radio"] {
 	margin-left: 5px;
 	display: flex;
 	align-items: center;
+    cursor: pointer;
 }
 
 .stars > label::before {
