@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Somba Shopping Made Simple. An e-commerce website that makes shopping simple in Brazzaville.">
+    <meta name="author" content="Relga-Zidrey Nkounkou">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/somba-home-page.css">
+    <script src="scripts/checkout.js" defer></script>
+    <title>Somba Home</title>
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <div class="logo"><img src="images/logo.webp" alt="logo"></div>
+            <!-- <input type="text" id="search" name="search" placeholder="Search products..."> -->
+        </div>
+
+        <div class="nav-bar">
+            <a href="index.html">Home</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="cart.html" class="shopping-cart"><img src="images/shopping_cart.svg" alt="shopping cart"><span id="count">0</span></a>
+        </div>
+    </nav>
+
+    <main>
+    
+        <h2 class="checkout-heading">Review & Place your Order</h2>
+
+        <form name="checkout" id="checkoutSubmit">
+          <input type="hidden" name="orderDate" id="orderDate" />
+          <fieldset>
+            <legend>Customer</legend>
+            <label for="fname">First Name*<input type="text" id="fname" name="fname" required /></label>
+
+            <label for="lname">Last Name*<input type="text" id="lname" name="lname" required /></label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Billing & Shipping Address</legend>
+            <label for="street">Street Address*<input type="text" id="street" name="street" required /></label>
+
+            <label for="city">City*<input type="text" id="city" name="city" required /></label>
+            
+
+            <label for="state">State<input type="text" id="state" name="state" required /></label>
+
+            <label for="zip">Zip<input type="text" name="zip" id="zip" /></label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Payment</legend>
+            <label for="cardNumber">Credit Card Number*<input
+              type="text"
+              id="cardNumber"
+              name="cardNumber"
+              placeholder="1234 2221 4535 4634"
+              required
+            /></label>
+            
+
+            <label for="expiration">Expiration Date*<input
+              type="text"
+              id="expiration"
+              name="expiration"
+              placeholder="MM/YY"
+              required
+              pattern="(0[1-9]|1[0-2])\/\d{2}"
+            /></label>
+            
+
+            <label for="code">Security Code*<input
+              type="text"
+              id="code"
+              name="code"
+              placeholder="123"
+              required
+            /></label>
+            
+          </fieldset>
+          <fieldset class="checkout-summary">
+            <legend>Order Summary</legend>
+
+            <div class="order__summary">
+              <div>Items</div>
+              <div id="num-items"></div>
+              <div>Subtotal</div>
+              <div id="cartTotal"></div>
+              <div>Tax</div>
+              <div id="tax"></div>
+              <div>Shipping</div>
+              <div id="shipping"></div>
+              <div>Total</div>
+              <div id="orderTotal"></div>
+            </div>
+          </fieldset>
+          <input type="submit" value="Place Your Order"/>
+        </form>
+    </main>
+
+    <footer>
+            <p>&copy; <span id="currentyear"></span> Relga-Zidrey Nkounkou, Brazzaville</p>
+            <p id="lastmodified"> </p>
+    </footer>
+</body>
+</html>

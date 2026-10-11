@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/somba-home-page.css">
+    <script src="scripts/somba-home-page.js" defer></script>
     <title>Somba Home</title>
 </head>
 <body>
@@ -19,14 +20,14 @@
         <nav>
             <div class="logo-container">
                 <div class="logo"><img src="images/logo.webp" alt="logo"></div>
-                <input type="text" id="search" name="search" placeholder="Search products...">
+                <!-- <input type="text" id="search" name="search" placeholder="Search products..."> -->
             </div>
 
             <div class="nav-bar">
-                <a href="#">Home</a>
-                <a href="#">Checkout</a>
-                <a href="#">Sign Up</a>
-                <a href="#" class="shopping-cart"><img src="images/shopping_cart.svg" alt="shopping cart"><span id="count">3</span></a>
+                <a href="index.html">Home</a>
+                <a href="checkout.html">Checkout</a>
+                <a href="signup.html">Sign Up</a>
+                <a href="cart.html" class="shopping-cart"><img src="images/shopping_cart.svg" alt="shopping cart"><span id="count">0</span></a>
             </div>
         </nav>
 
@@ -47,30 +48,37 @@
             </div>
 
             <div class="landing-hero">
-                <img src="images/basket.webp" alt="landing hero">
+                <img src="images/hero.webp" alt="landing hero">
             </div>
         </div>
 
 
         <div class="products">
+            <h2 class="main-page-second-h">Shop By Category</h2>
             <div class="airpods">
-                <img src="images/basket.webp" alt="Airpods image">
-                <p id="description">Description of the image</p>
+                <img src="https://s.alicdn.com/@sc04/kf/Hf5a842de3e594830be73afa2dbaa5e6cj.jpg_300x300.jpg
+" alt="Airpods image">
+                <a id="description" href="#">Airpods</a>
             </div>
 
-            <div class="Iphone">
-                <img src="images/basket.webp" alt="Airpods image">
-                <p id="description">Description of the image</p>
+            <div class="iphone">
+                <img src="https://s.alicdn.com/@sc04/kf/H957538ce845243d09936995a9778686dp.jpg_300x300.jpg" alt="Iphone image">
+                <a id="description" href="#">Iphones</a>
             </div>
             
             <div class="headsets">
-                <img src="images/basket.webp" alt="Airpods image">
-                <p id="description">Description of the image</p>
+                <img src="https://s.alicdn.com/@sc04/kf/H5c39b0a7cb644952b270d841ebc71f40I.png_300x300.png" alt="Headsets image">
+                <a id="description" href="#">Headsets</a>
             </div>
             
         </div>
 
-
     </main>
+
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Relga-Zidrey Nkounkou, Brazzaville</p>
+        <p id="lastmodified"> </p>
+    </footer>
 </body>
 </html>

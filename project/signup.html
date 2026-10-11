@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Somba Shopping Made Simple. An e-commerce website that makes shopping simple in Brazzaville.">
+    <meta name="author" content="Relga-Zidrey Nkounkou">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/somba-home-page.css">
+    <script src="scripts/signup.js" defer></script>
+    <title>Somba Home</title>
+</head>
+<body>
+
+    <nav>
+            <div class="logo-container">
+                <div class="logo"><img src="images/logo.webp" alt="logo"></div>
+                <!-- <input type="text" id="search" name="search" placeholder="Search products..."> -->
+            </div>
+
+            <div class="nav-bar">
+                <a href="index.html">Home</a>
+                <a href="checkout.html">Checkout</a>
+                <a href="signup.html">Sign Up</a>
+                <a href="cart.html" class="shopping-cart"><img src="images/shopping_cart.svg" alt="shopping cart"><span id="count">0</span></a>
+            </div>
+        </nav>
+
+
+    <main>
+
+        <form action="index.html">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <label>First name*<input type="text" id="fname" name="fname" required></label>
+                <label>Last Name*<input type="text" id="lname" name="lname" required></label>
+                <label>Email*<input type="email" id="email" name="email" required></label>
+                <label>Password*<input type="password" id="password" name="password" required></label>
+                <label>Confirm Password*<input type="password" id="confirmpassord" name="confirmpassord" required></label>
+            </fieldset>
+
+            <input type="submit" value="Create Account">
+        </form>
+    </main>
+
+    <footer>
+            <p>&copy; <span id="currentyear"></span> Relga-Zidrey Nkounkou, Brazzaville</p>
+            <p id="lastmodified"> </p>
+    </footer>
+</body>
+</html>
