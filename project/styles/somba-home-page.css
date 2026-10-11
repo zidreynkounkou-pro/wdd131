@@ -303,7 +303,7 @@ form input[type="submit"]:hover {
 
 /* Checkout Page */
 
-.checkout-heading {
+.checkout-heading, .signup-heading {
     text-align: center;
     font-family: "Sora", sans-serif;
     font-size: 32px;
