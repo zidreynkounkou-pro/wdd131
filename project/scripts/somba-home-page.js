@@ -25,3 +25,22 @@ hamburger.addEventListener('click', () => {
         navigation.style.display = 'none';
     }
 });
+
+
+let cart = JSON.parse(localStorage.getItem('soma-cart')) || [];
+
+//Update cart count
+function updateCartCount() {
+    const count = cart.reduce((total, item) => total + item.quantity, 0);
+    const shoppingCart = document.querySelector('.shopping-cart');
+    if (shoppingCart) {
+        shoppingCart.textContent = count;
+    }
+}
+
+
+// Add to cart
+
+function addToCart () {
+    const button = document.querySelectorAll('#add-to-cart');
+}
