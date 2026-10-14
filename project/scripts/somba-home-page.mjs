@@ -10,15 +10,14 @@ document.querySelector('#lastmodified').textContent = `Last modified: ${document
 
 
 
-
 // Load from localStorage first
-function getCart() {
+export function getCart() {
   return JSON.parse(localStorage.getItem('somba-cart')) || [];
-}
+};
 
 function saveCart(cart) {
   localStorage.setItem('somba-cart', JSON.stringify(cart));
-}
+};
 
 // Update count from storage
 export function updateCartCount() {
@@ -29,11 +28,14 @@ export function updateCartCount() {
   if (cartIcon) {
     cartIcon.textContent = count;
   }
-}
+};
+
+
+
 
 // Add to cart
 function setupAddToCart() {
-  const buttons = document.querySelectorAll('#add-to-cart');
+  const buttons = document.querySelectorAll('.add-to-cart');
   
   buttons.forEach(btn => {
       btn.addEventListener('click', () => {
@@ -42,13 +44,14 @@ function setupAddToCart() {
 
       const name = btn.dataset.name;
       const price = parseInt(btn.dataset.price);
-      const image = btn.dataset.image;
+        const image = btn.dataset.image;
+        const description = btn.dataset.description;
 
       const existing = cart.find(item => item.name === name);
       if (existing) {
         existing.quantity += 1;
       } else {
-        cart.push({ name, price, image, quantity: 1});
+        cart.push({ name, price, description, image, quantity: 1});
       }
 
       saveCart(cart);
@@ -96,12 +99,10 @@ export function hamburgerFunction() {
     }
 });
   
-}
+};
+
 
 hamburgerFunction();
-
-
-
 
 /*
 
