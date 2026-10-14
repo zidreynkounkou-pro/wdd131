@@ -184,13 +184,17 @@ nav {
     border-radius: 8px;
     width: 150px;
     background-color: var(--secondary-color);
-    color: var(--accent2-color);
     font-size: 18px;
     font-weight: bold;
-    transition: .5s ease;
 }
 
-#shopping-btn:hover {
+#shopping-btn a {
+    color: var(--accent2-color);
+    transition: .5s ease;
+    text-decoration: none;
+}
+
+#shopping-btn a:hover {
     color: var(--accent1-color);
     cursor: pointer;
 }
