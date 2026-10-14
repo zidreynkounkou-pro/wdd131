@@ -79,6 +79,11 @@ updateCartCount();
 export function hamburgerFunction() {
   const navigation = document.querySelector('.nav-bar');
   const hamburger = document.querySelector('#menu');
+
+  // Do not add another listener if we already have one on main page
+  if (hamburger.dataset.listener === "true") return;
+  hamburger.dataset.listener = "true";
+  
   hamburger.addEventListener('click', () => {
     if (navigation.style.display === 'none') {
         hamburger.classList.toggle('open');
